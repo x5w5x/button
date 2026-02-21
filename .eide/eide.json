@@ -3,7 +3,7 @@
   "type": "ARM",
   "dependenceList": [],
   "srcDirs": [
-    "led"
+    "button"
   ],
   "virtualFolder": {
     "name": "<virtual_root>",
@@ -368,18 +368,17 @@
           "System",
           ".cmsis/include",
           "RTE/_Target 1",
-          "led/config",
-          "led/core",
-          "led/drivers",
-          "led/utils",
-          "led/test",
-          "led/hal"
+          "button/config",
+          "button/core",
+          "button/drivers",
+          "button/hal",
+          "button/utils"
         ],
         "libList": [
-          "led/config",
-          "led/core",
-          "led/drivers",
-          "led/utils"
+          "button/config",
+          "button/core",
+          "button/drivers",
+          "button/hal"
         ],
         "defineList": [
           "USE_STDPERIPH_DRIVER",
@@ -392,7 +391,8 @@
           "beforeBuildTasks": [],
           "afterBuildTasks": [],
           "global": {
-            "output-debug-info": "enable"
+            "output-debug-info": "enable",
+            "use-microLIB": true
           },
           "c/cpp-compiler": {
             "optimization": "level-0",
@@ -405,7 +405,7 @@
           "asm-compiler": {},
           "linker": {
             "$outputTaskExcludes": [
-              ".bin"
+              ".s19"
             ],
             "output-format": "elf",
             "ro-base": "0x08000000",

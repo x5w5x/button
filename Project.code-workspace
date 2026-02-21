@@ -19,7 +19,8 @@
             "hal_gpio.h": "c",
             "hal_pwm.h": "c",
             "pwm_led.h": "c",
-            "led_driver.h": "c"
+            "led_driver.h": "c",
+            "button_core.h": "c"
         }
     },
     "extensions": {}
